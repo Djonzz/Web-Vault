@@ -1,7 +1,5 @@
+---
+omslag: https://pub-b2e449d69f2f4f90bae8d4d303071082.r2.dev/2026/09/1788505487657-2h69j9nf.webp
+---
 
 ![](https://pub-b2e449d69f2f4f90bae8d4d303071082.r2.dev/2026/09/1788505487657-2h69j9nf.webp)
-
-
-
-
-![](https://pub-b2e449d69f2f4f90bae8d4d303071082.r2.dev/2026/09/1788506017252-k2gg6dn7.gif)

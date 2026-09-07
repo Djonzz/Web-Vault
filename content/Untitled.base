@@ -1,0 +1,7 @@
+views:
+  - type: cards
+    name: Table
+    order: []
+    image: note.omslag
+    cardSize: 570
+    imageAspectRatio: 0.45
