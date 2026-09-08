@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: Space Grotesk
+      body: Inter
+      code: JetBrains Mono
     colors:
       lightMode:
         light: "#faf8f8"
@@ -61,7 +61,7 @@ plugins:
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
-      enableInHtmlEmbed: false
+      enableInHtmlEmbed: true
       enableCheckbox: true
     order: 30
   - source: "@quartz-community/github-flavored-markdown"
@@ -180,7 +180,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -200,11 +200,11 @@ plugins:
       position: afterBody
       priority: 10
   - source: "@quartz-community/footer"
-    enabled: false
+    enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        "Kontakt: Helst inte.": "#"
+        "Adress: Jag är i dina väggar.": "#"
     layout:
       position: footer
       priority: 50

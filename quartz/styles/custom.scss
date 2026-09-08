@@ -8,3 +8,84 @@
 .page {
   max-width: 2000px;
 }
+
+//.gallery p {
+//  display: grid;
+//  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+//  gap: 1rem;
+//  margin: 2rem 0;
+//}
+
+
+// Bilder, avstånd etc
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  //border: 12px solid var(--light);
+  margin: 1.5rem 0; //Avstånd mellan rader
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+//sidfot
+footer > p {
+  display: none;
+}
+
+footer ul li a {
+  color: var(--darkgray);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+footer a[href="#"] {
+  pointer-events: none;
+  cursor: default;
+  color: var(--darkgray);
+  text-decoration: none;
+}
+
+//Fade animation
+.gallery img {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range: entry 0% Entry 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.70); //Justera animation
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+//snap
+html {
+  scroll-snap-type: y proximity; //mandatory;
+}
+
+.gallery img {
+  scroll-snap-align: center;
+scroll-margin: 100px
+}
