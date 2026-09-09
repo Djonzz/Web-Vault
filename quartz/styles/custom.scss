@@ -80,18 +80,27 @@ footer a[href="#"] {
     transform: translateY(0) scale(1);
   }
 }
-//snap
-html {
-  scroll-snap-type: y proximity; //mandatory;
+//snap //has(.gallery) för bilder
+html:has(.gallery) {
+  scroll-snap-type: y mandatory; //proximity;
+  scroll-behavior: smooth;
+  scroll-padding: 10vh;
 }
 
 .gallery img {
   scroll-snap-align: center;
-scroll-margin: 100px
+  scroll-snap-stop: normal;
+  //scroll-margin: 100px
 }
 
 //Flytta darkmode
 .flex-component {
-  margin-left: -0.5rem; // adjust to taste
+  margin-left: -0rem; // adjust to taste
   margin-top: -4rem;
+}
+
+//Ta bort explorer
+.explorer-toggle {
+  margin-top: 1.5rem;
+  display: none;
 }

@@ -132,6 +132,8 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      title: "Utforska"
     layout:
       position: left
       priority: 50
