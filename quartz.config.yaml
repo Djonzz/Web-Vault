@@ -133,12 +133,12 @@ plugins:
   - source: "@quartz-community/explorer"
     enabled: true
     options:
-      title: "Utforska"
+      title: Utforska
     layout:
       position: left
       priority: 50
   - source: "@quartz-community/graph"
-    enabled: False
+    enabled: false
     layout:
       position: right
       priority: 10
@@ -187,7 +187,7 @@ plugins:
       position: left
       priority: 35
       group: toolbar
-  - source: "@quartz-community/breadcrumbs" # Mappar ovanför. kan vara användbart?
+  - source: "@quartz-community/breadcrumbs"
     enabled: false
     layout:
       position: beforeBody
@@ -259,6 +259,10 @@ plugins:
       position: afterBody
       priority: 50
       display: all
+  - source: github:vazome/quartz-image-zoom
+    enabled: true
+    options: {}
+    order: 50
 layout:
   groups:
     toolbar:
